@@ -6,9 +6,9 @@ local map = vim.keymap.set
 local wk = require("which-key")
 
 -- cmake tools
-map("n", "<leader>cmg", "<cmd>CMakeGenerate<cr>", { desc = "Cmake Generate" })
-map("n", "<leader>cmb", "<cmd>CMakeBuild<cr>", { desc = "Cmake Build" })
-map("n", "<leader>cmc", "<cmd>CMakeClean<cr>", { desc = "Cmake Clean" })
+map("n", "<leader>mg", "<cmd>CMakeGenerate<cr>", { desc = "Cmake Generate" })
+map("n", "<leader>mb", "<cmd>CMakeBuild<cr>", { desc = "Cmake Build" })
+map("n", "<leader>mc", "<cmd>CMakeClean<cr>", { desc = "Cmake Clean" })
 wk.add({
-    { "<leader>cm", "CMake", mode = { "n" } },
+  { "<leader>m", "CMake", mode = { "n" } },
 })
